@@ -75,13 +75,13 @@ export default function Detail({ navigation, route }) {
                             );
                         })}
                     </View>
-                    <View>
-                        <View style={{ paddingBottom: 80 }}>
-                            {menu === 'Movimentos' ? <Moves item={item}></Moves> : <View></View>}
-                            {menu === "Sobre" ? <About item={item}></About> : <View></View>}
-                            {menu === "Status" ? <Stats item={item}></Stats> : <View></View>}
-                        </View>
-                    </View>
+                    <ScrollView>
+                        <ScrollView style={{ paddingBottom: 80 }}>
+                            {menu === 'Movimentos' ? <Moves item={item}></Moves> : <ScrollView></ScrollView>}
+                            {menu === "Sobre" ? <About item={item}></About> : <ScrollView></ScrollView>}
+                            {menu === "Status" ? <Stats item={item}></Stats> : <ScrollView></ScrollView>}
+                        </ScrollView>
+                    </ScrollView>
                 </SafeAreaView>
             </View>
         </View>
