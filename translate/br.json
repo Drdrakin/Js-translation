@@ -1,6 +1,12 @@
 {
     "translation": {        
         "overgrow, chlorophyll": "Crescimento-Excessivo, Cloropila",
+        "blaze, solar-power": "Chamas, Poder-solar",
+        "torrent, rain-dish": "Corrente, Chuva",
+        "shield-dust, run-away": "Escudo-de-poeira, Fugir",
+        "keen-eye, tangled-feet, big-pecks": "Olho-bom, Pés-coisados, Grandes-Bicos",
+        "run-away, guts, hustle": "Fugir, Visceras, Voar",
+        "shed-skin": "Trocar-pele",
         "Hp": "Vida",
         "Attack": "Ataque",
         "Defense": "Defesa",

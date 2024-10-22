@@ -9,10 +9,12 @@ import '../../translate/i18n.js'
 // Define o componente funcional Moves que recebe props como argumento
 export default function Moves(props) {
 
+    function capitalize(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
     const { t } = useTranslation(); // Obtém a função de tradução
-
     const { item } = props; // Desestrutura a prop item
-
+    
     // Define a cor de fundo baseada no tipo do Pokémon
     const pokemonColor = pokemonColors[item.type];
 
@@ -27,7 +29,7 @@ export default function Moves(props) {
                             // Cria uma View para cada movimento com uma chave única
                             <View key={idx} style={{ backgroundColor: pokemonColor, borderRadius: 5, alignSelf: "baseline", margin: 5, opacity: 0.4 }}>
                                 {/* Exibe o nome do movimento */}
-                                <Text style={{ color: "black", padding: 5 }}>{t(move.move.name)}</Text>
+                                <Text style={{ color: "black", padding: 5 }}>{capitalize(t(move.move.name))}</Text>
                             </View>
                         );
                     })
